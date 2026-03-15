@@ -1,19 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:padding="16dp">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Form Input Penilaian"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:gravity="center" />
+
+        <EditText
+            android:id="@+id/etDosen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama Dosen"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etMatkul"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mata Kuliah"
+            android:inputType="text"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etJumlah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jumlah Mahasiswa"
+            android:inputType="number"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipe Kelas:"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgTipe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="24dp">
+
+            <RadioButton
+                android:id="@+id/rbTeori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Teori"
+                android:layout_marginEnd="16dp" />
+
+            <RadioButton
+                android:id="@+id/rbPraktikum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Praktikum" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnGenerate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Generate Lembar Penilaian" />
+
+    </LinearLayout>
+</ScrollView>
