@@ -1,7 +1,7 @@
 # UTS Pemrograman Seluler - Aplikasi Generator Lembar Penilaian
 
 ## Identitas Mahasiswa
-- **Nama Lengkap:** 
+- **Nama Lengkap:** Pramudya Figo Darmawan
 - **NIM:** 42430016
 - **Program Studi:** Teknologi Informasi
 
